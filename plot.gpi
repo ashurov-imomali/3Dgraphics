@@ -1,0 +1,31 @@
+clear 
+reset 
+set terminal gif animate delay 15 
+set output "animate.gif" 
+set isosamples 100 
+set hidden3d 
+set xlabel "x" 
+set ylabel "y" 
+set zlabel "z=F" 
+unset key 
+set xrange[0:6.2831853072] 
+set yrange[0:6.2831853072] 
+set zrange[*:*] 
+set surface 
+set contour base 
+set view 55,28,1.0,1.0 
+set cntrparam levels auto 12 
+set pm3d 
+splot 'data4' w l 
+splot 'data5' w l 
+splot 'data6' w l 
+splot 'data7' w l 
+splot 'data8' w l 
+splot 'data9' w l 
+splot 'data10' w l 
+splot 'data11' w l 
+splot 'data12' w l 
+splot 'data13' w l 
+splot 'data14' w l 
+splot 'data15' w l 
+splot 'data16' w l 
